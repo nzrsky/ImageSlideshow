@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
 let package = Package(
     name: "ImageSlideshow",
     platforms: [
-        .iOS(.v10),
+        .iOS(.v15),
     ],
     products: [
         .library(
@@ -64,5 +64,5 @@ let package = Package(
             path: "ImageSlideshow/Classes/InputSources",
             sources: ["KingfisherSource.swift"])
     ],
-    swiftLanguageVersions: [.v4, .v4_2, .v5]
+    swiftLanguageVersions: [.v5]
 )
